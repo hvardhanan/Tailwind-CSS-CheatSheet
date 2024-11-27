@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Colors</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://tailwindcss.com/docs/customizing-colors -->
+
+    <h1 class="text-3xl uppercase">Colors</h1>
+
+    
+    <br />
+
+    <!-- 2. Colors With Different Shades -->
+    <h1>1. Colors With Different Shades</h1>
+    <p class="text-indigo-50">text-indigo-50</p>
+    <p class="text-indigo-100">text-indigo-100</p>
+    <p class="text-indigo-200">text-indigo-200</p>
+    <p class="text-indigo-300">text-indigo-300</p>
+    <p class="text-indigo-400">text-indigo-400</p>
+    <p class="text-indigo-500">text-indigo-500</p>
+    <p class="text-indigo-600">text-indigo-600</p>
+    <p class="text-indigo-700">text-indigo-700</p>
+    <p class="text-indigo-800">text-indigo-800</p>
+    <p class="text-indigo-900">text-indigo-900</p>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 2. Background Colors -->
+    <!-- https://tailwindcss.com/docs/background-color -->
+    <h1>2. Background Colors</h1>
+    <p class="bg-pink-600 text-white">bg-pink-600</p>
+    <p class="bg-red-400 text-white">bg-red-400</p>
+    <p class="bg-blue-600 text-white">bg-blue-600</p>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Text Underline -->
+    <h1>3. Text Decoration</h1>
+    <p class="line-through">line-through</p>
+    <p class="underline">underline</p>
+    <p class="overline">overline</p>
+    <p class="underline decoration-purple-400">underline decoration-purple-400</p>
+    <p class="text-purple-600 underline decoration-purple-400">text-purple-600 underline decoration-purple-400</p>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- https://tailwindcss.com/docs/accent-color -->
+    <h1>4. Accent Colors</h1>
+    <input type="checkbox" class="accent-indigo-500" checked /> accent-indigo-500
+    <br />
+    <input type="checkbox" class="accent-yellow-500" checked /> accent-yellow-500
+    <br />
+    <input type="checkbox" class="accent-red-300" checked /> accent-red-300
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>5. Arbitrary Colors</h1>
+    <div class="bg-[#c0c0c0] h-10">bg-[#c0c0c0] h-10</div>
+    <div class="text-[#ff0cd0] h-10">text-[#ff0cd0] h-10</div>
+    <div class="border border-[#ccc000] h-10">border border-[#ccc000] h-10</div>
+    <br />
+    <hr />
+    <br />
+
+    <h1 class="text-3xl uppercase">Container Spacing</h1>
+
+    <br />
+
+    <!-- https://tailwindcss.com/docs/margin -->
+      <!-- Margin -->
+    <h3 class="uppercase">1. Margin</h3>
+    <div class="m-4 bg-yellow-100">m-4 bg-yellow-100 (Margin all around)</div>
+    <div class="mx-4 bg-yellow-200">mx-4 bg-yellow-200 (Margin from x axis)</div>
+    <div class="my-4 bg-yellow-300">my-4 bg-yellow-300 (Margin Y axis)</div>
+    <div class="mt-6 bg-yellow-400">mt-6 bg-yellow-400 (Margin Top)</div>
+    <div class="mr-4 bg-yellow-500">mr-4 bg-yellow-500 (Margin Right)</div>
+    <div class="ml-2 bg-yellow-700">ml-2 bg-yellow-700 (Margin Left)</div>
+    <div class="mb-8 bg-yellow-600">mb-8 bg-yellow-600 (Margin Bottom)</div>
+
+    <!-- Arbitrary Spacing -->
+    <div class="m-[200px] bg-teal-700">m-[200px] bg-slate-700 (Margin all around)</div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- https://tailwindcss.com/docs/padding -->
+    <!-- Padding -->
+    <h3 class="my-4">2. Padding</h3>
+    <div class="p-4 bg-lime-100">p-4 bg-lime-100 (Padding all around)</div>
+    <div class="px-4 bg-lime-200">px-4 bg-lime-200 (Padding X axis)</div>
+    <div class="py-4 bg-lime-300">py-4 bg-lime-300 (Padding Y axis)</div>
+    <div class="pt-6 bg-lime-400">pt-6 bg-lime-400 (Padding Top)</div>
+    <div class="pr-4 bg-lime-500">pr-4 bg-lime-500 (Padding Right)</div>
+    <div class="pb-8 bg-lime-600">pb-8 bg-lime-600 (Padding Bottom)</div>
+    <div class="pl-2 bg-lime-700">pl-2 bg-lime-700 (Padding Left)</div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- https://tailwindcss.com/docs/space -->
+    <!-- Space Between X -->
+    <h3 class="my-4">flex space-x-4 (Space Between X)</h3>
+    <div class="flex space-x-4">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+    </div>
+    
+    <br />
+    <hr />
+    <br />
+    
+    <!-- Space Between Y -->
+    <h3 class="my-4">flex flex-col space-y-4 (Space Between Y)</h3>
+    <div class="flex flex-col space-y-4">
+        <div class="p-3 bg-teal-400">01</div>
+        <div class="p-3 bg-teal-500">02</div>
+        <div class="p-3 bg-teal-600">03</div>
+    </div>
+    
+  </body>
+
+</html>
